@@ -1,0 +1,86 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: orange; /* Turuncu arka plan */
+    overflow: hidden;
+}
+
+
+#gameArea {
+    position: relative;
+    width: 80vw;
+    height: 70vh;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border: 3px solid #00796b;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+    background-color: #b2dfdb;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.cell.correct {
+    background-color: #4caf50;
+    color: #ffffff;
+    cursor: default;
+}
+
+.cell.incorrect {
+    background-color: #f44336;
+    color: #ffffff;
+}
+
+#scoreBoard {
+    margin-top: 20px;
+}
+
+#score {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#timer {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#message {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#startButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#startButton:hover {
+    background-color: #004d40;
+}
+
